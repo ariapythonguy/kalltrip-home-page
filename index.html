@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kall Trip Pvt Ltd</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #fff;
+      color: #000;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      text-align: center;
+      padding: 20px;
+      border-bottom: 2px solid #000;
+    }
+
+    header a {
+      display: inline-block;
+      text-decoration: none;
+    }
+
+    header img {
+      max-width: 220px;
+      height: auto;
+      display: block;
+      margin: 0 auto 10px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 22px;
+      font-weight: bold;
+      color: #000;
+    }
+
+    .grid {
+      flex: 1;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      border-top: 2px solid #000;
+      border-left: 2px solid #000;
+    }
+
+    .panel {
+      border-right: 2px solid #000;
+      border-bottom: 2px solid #000;
+      padding: 30px 20px;
+      text-align: center;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    .panel:hover {
+      background: #000;
+      color: #fff;
+      cursor: pointer;
+    }
+
+    .panel img {
+      width: 300px;
+      height: 400px;
+      object-fit: contain;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      background: #f9f9f9;
+    }
+
+    .panel h2 {
+      margin: 10px 0;
+      font-size: 20px;
+    }
+
+    .panel a {
+      text-decoration: none;
+      color: inherit;
+      font-size: 18px;
+      font-weight: bold;
+      display: block;
+      margin-top: 10px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      border-top: 2px solid #000;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="https://kalltrip.com">
+      <img src="https://images.teyzee.site/kalltrip_images/kalltrip_logo_large.png" alt="Kall Trip Logo">
+    </a>
+    <h1>Kall Trip Pvt Ltd</h1>
+  </header>
+
+  <main class="grid">
+    <div class="panel" onclick="goTo('https://www.ariaprohotels.com')">
+      <img src="https://images.teyzee.site/kalltrip_images/APH-logo.png" alt="AriaProHotels Logo">
+      <h2>AriaProHotels</h2>
+      <a href="https://www.ariaprohotels.com">Explore</a>
+    </div>
+
+    <div class="panel" onclick="goTo('https://teyzee.site')">
+      <img src="https://images.teyzee.site/kalltrip_images/TeyZee_menus_logo.png" alt="Teyzee StoreFront Logo">
+      <h2>Teyzee StoreFront</h2>
+      <a href="https://teyzee.site">Explore</a>
+    </div>
+
+    <div class="panel" onclick="goTo('https://teyzeevisas.com')">
+      <img src="https://images.teyzee.site/kalltrip_images/Teyzee_logo.jpg" alt="Teyzee Visas Logo">
+      <h2>Teyzee Visas</h2>
+      <a href="https://teyzeevisas.com">Explore</a>
+    </div>
+
+    <div class="panel" onclick="goTo('https://indiacarz.com')">
+      <img src="https://images.teyzee.site/kalltrip_images/indiacarz_new_logo_320w.png" alt="Indiacarz Logo">
+      <h2>Indiacarz</h2>
+      <a href="https://indiacarz.com">Explore</a>
+    </div>
+  </main>
+
+  <footer>
+    2025 All rights reserved - Site by Kall Trip Pvt Ltd since 2011.  
+    Contact: <a href="mailto:hotelsales.bom@kalltrip.com">hotelsales.bom@kalltrip.com</a>
+  </footer>
+
+  <script>
+    function goTo(url) {
+      window.location.href = url;
+    }
+  </script>
+</body>
+</html>
